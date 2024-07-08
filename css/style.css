@@ -30,3 +30,45 @@ body {
     font-size: 1rem;
     line-height: 26px;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.logo {
+    background-image: url("../img/shared/desktop/logo-dark.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 202px;
+    height: 27px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 370px;
+    height: 14px;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 24px;
+}
+
+.hamburger-menu {
+    background-image: url("../img/shared/mobile/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 20px;
+}
+
