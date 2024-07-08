@@ -83,8 +83,6 @@ nav {
 **************************************************/
 
 .hero {
-    position: absolute;
-    top: 96px;
     width: 375px;
     height: 843px;
     background-color: var(--peach);
@@ -92,6 +90,7 @@ nav {
     background-repeat: no-repeat;
     background-position: left;
     overflow: hidden;
+    margin-bottom: 120px;
 }
 
 .hero-content {
@@ -135,3 +134,78 @@ h1 {
 .hero-img {
     margin: -160px -121px;
 }
+
+/************************************************** 
+    PROJECTS SECTION
+**************************************************/
+
+.projects {
+    margin-bottom: 120px;
+}
+
+.content-wrapper {
+    margin: 0 24px;
+}
+
+.web-design,
+.app-design,
+.graphic-design {
+    background-repeat: no-repeat;
+    background-position: contain;
+    width: 327px;
+    height: 250px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.web-design {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.5)), url("../img/home/mobile/image-web-design.jpg");
+}
+
+.app-design {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.5)), url("../img/home/mobile/image-app-design.jpg");
+    margin: 24px 0;
+}
+
+.graphic-design {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.5)), url("../img/home/mobile/image-graphic-design.jpg");
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 12px;
+
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 197px;
+}
+
+.link a {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.arrow {
+    background-image: url("../img/shared/desktop/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: contain;
+    width: 8px;
+    height: 11px;
+}
+
