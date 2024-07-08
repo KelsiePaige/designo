@@ -31,6 +31,10 @@ body {
     line-height: 26px;
 }
 
+/************************************************** 
+    HEADER SECTION
+**************************************************/
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -57,6 +61,8 @@ nav {
     height: 14px;
 }
 
+/* Navigation menu for mobile devices */
+
 .mobile-nav {
     display: flex;
     justify-content: space-between;
@@ -72,3 +78,60 @@ nav {
     height: 20px;
 }
 
+/************************************************** 
+    HERO SECTION
+**************************************************/
+
+.hero {
+    position: absolute;
+    top: 96px;
+    width: 375px;
+    height: 843px;
+    background-color: var(--peach);
+    background-image: url("../img/home/desktop/bg-pattern-hero-home.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    overflow: hidden;
+}
+
+.hero-content {
+    padding: 80px 24px;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 36px;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.hero-content p {
+    font-size: 0.9375rem;
+    line-height: 25px;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.btn {
+    width: 152px;
+    height: 56px;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 8px;
+    border: none;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--dark-grey);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    margin: -160px -121px;
+}
