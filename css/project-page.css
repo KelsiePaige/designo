@@ -8,6 +8,15 @@ section {
 
 /* Hero section */
 
+.hero {
+    width: 375px;
+    height: 320px;
+    background-color: var(--peach);
+    background-image: url("../img/web-design/desktop/bg-pattern-intro-web.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
 .hero-content {
     padding-top: 105px;
     padding-bottom: 105px;
@@ -27,6 +36,14 @@ section {
     margin-bottom: 0;
 }
 
+.project-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 327px;
+    height: 320px;
+    border-radius: 15px 15px 0 0;
+}
+
 .project-content {
     width: 327px;
     height: 158px;
@@ -43,12 +60,6 @@ section {
     padding: 0 30px;
 }
 
-/* Call to action section */
-
-aside {
-    top: 4296px;
-}
-
 /* Footer section */
 
 footer {
@@ -59,31 +70,7 @@ footer {
     WEB DESIGN PAGE STYLES
 **************************************************/
 
-/* Hero section */
-
-.hero {
-    width: 375px;
-    height: 320px;
-    background-color: var(--peach);
-    background-image: url("../img/web-design/desktop/bg-pattern-intro-web.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-}
-
 /* Projects section */
-
-.express,
-.transfer,
-.photon,
-.builder,
-.blogr,
-.camp {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 327px;
-    height: 320px;
-    border-radius: 15px 15px 0 0;
-}
 
 .express {
     background-image: url("../img/web-design/desktop/image-express.jpg");
@@ -109,3 +96,40 @@ footer {
     background-image: url("../img/web-design/desktop/image-camp.jpg");
 }
 
+/* Call to action section */
+
+#web-design {
+    top: 4296px;
+}
+
+/************************************************** 
+    APP DESIGN PAGE STYLES
+**************************************************/
+
+/* Projects section */
+
+.airfilter {
+    background-image: url("../img/app-design/desktop/image-airfilter.jpg");
+}
+
+.eyecam {
+    background-image: url("../img/app-design/desktop/image-eyecam.jpg");
+}
+
+.faceit {
+    background-image: url("../img/app-design/desktop/image-faceit.jpg");
+}
+
+.todo {
+    background-image: url("../img/app-design/desktop/image-todo.jpg");
+}
+
+.loopstudios {
+    background-image: url("../img/app-design/desktop/image-loopstudios.jpg");
+}
+
+/* Call to action section */
+
+#app-design {
+    top: 3778px;
+}
