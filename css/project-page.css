@@ -133,3 +133,27 @@ footer {
 #app-design {
     top: 3778px;
 }
+
+/************************************************** 
+    GRAPHIC DESIGN PAGE STYLES
+**************************************************/
+
+/* Projects section */
+
+.change {
+    background-image: url("../img/graphic-design/desktop/image-change.jpg");
+}
+
+.boxed-water {
+    background-image: url("../img/graphic-design/desktop/image-boxed-water.jpg");
+}
+
+.science {
+    background-image: url("../img/graphic-design/desktop/image-science.jpg");
+}
+
+/* Call to action section */
+
+#graphic-design {
+    top: 2742px;
+}
