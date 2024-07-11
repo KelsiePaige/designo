@@ -1,0 +1,133 @@
+/************************************************** 
+    HERO SECTION
+**************************************************/
+
+.hero {
+    width: 375px;
+    height: 715px;
+    background-image: none;
+    background-color: none;
+    overflow: visible;
+    margin-bottom: 0;
+}
+
+.hero-img {
+    margin: 0;
+    padding: 0;
+    width: 375px;
+    height: 320px;
+}
+
+.hero-content {
+    background-image: url("../img/about/mobile/bg-pattern-hero-about-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 25%;
+}
+
+h1 {
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    margin-bottom: 0;
+}
+
+/************************************************** 
+    TALENT AND ABOUT SECTIONS
+**************************************************/
+
+.talent-img,
+.about-img {
+    height: 320px;
+}
+
+.talent-content,
+.about-content {
+    background-image: url("../img/shared/desktop/bg-pattern-three-circles.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--xtr-light-peach);
+    width: 375px;
+    height: 545px;
+}
+
+.talent-content .content-wrapper,
+.about-content .content-wrapper {
+    padding: 80px 0;
+}
+
+.talent-content h2,
+.about-content h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    color: var(--peach);
+    margin-bottom: 24px;
+}
+
+.talent-content p .about-content p {
+    font-size: 0.9375rem;
+    line-height: 25px;
+}
+
+/************************************************** 
+    LOCATIONS SECTION
+**************************************************/
+
+.locations .content-wrapper {
+    margin: 0 13px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.location:last-of-type {
+    margin-bottom: 0;
+}
+
+.illustration-1 img {
+    transform: rotate(270deg);
+}
+
+.illustration-1 {
+    transform: rotate(90deg);
+}
+
+.illustration-2 img {
+    transform: rotate(360deg);
+}
+
+.illustration-2 {
+    transform: rotate(360deg);
+}
+
+.illustration-3 img {
+    transform: rotate(90deg);
+}
+
+.illustration-3 {
+    transform: rotate(270deg);
+}
+
+.btn.map {
+    background-color: var(--peach);
+    color: var(--white);
+}
+
+/************************************************** 
+    CALL TO ACTION SECTION
+**************************************************/
+
+#about {
+    position: absolute;
+    top: 4089px;
+    z-index: 1;
+}
