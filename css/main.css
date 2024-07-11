@@ -168,11 +168,12 @@ h1 {
 
 .web-design {
     background-image: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.5)), url("../img/home/mobile/image-web-design.jpg");
+    margin-bottom: 24px;
 }
 
 .app-design {
     background-image: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.5)), url("../img/home/mobile/image-app-design.jpg");
-    margin: 24px 0;
+    margin-bottom: 24px;
 }
 
 .graphic-design {
@@ -187,7 +188,6 @@ h2 {
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 12px;
-
 }
 
 .link {
