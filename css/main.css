@@ -26,6 +26,10 @@ html {
 }
 
 body {
+    /*****************Remove*****************/
+    max-width: 375px;
+    border: 1px solid var(--dark-grey);
+    /****************************************/
     margin: 0 auto;
     font-family: "Jost", sans-serif;
     font-size: 1rem;
