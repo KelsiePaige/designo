@@ -1,0 +1,58 @@
+.office-location {
+    width: 375px;
+    height: 714px;
+    margin-bottom: 40px;
+}
+
+.office-location:last-of-type {
+    margin-bottom: 0;
+}
+
+.geo-map {
+    width: 375px;
+    height: 320px;
+}
+
+.map-content {
+    background-image: url("../img/shared/desktop/bg-pattern-three-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 546px;
+    background-color: var(--xtr-light-peach);
+    width: 375px;
+    height: 394px;
+}
+
+.map-content .content-wrapper {
+    padding: 80px 24px;
+}
+
+.map-content .address {
+    margin-bottom: 24px;
+}
+
+.map-content h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    color: var(--peach);
+    margin-bottom: 24px;
+}
+
+.map-content h6 {
+    font-size: 0.9375rem;
+    line-height: 25px;
+    color: var(--dark-grey);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#locations {
+    position: absolute;
+    top: 2438px;
+    z-index: 1;
+}
