@@ -8,6 +8,7 @@
   
   <!-- CSS Link -->
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/contact.css">
   
   <!-- Jost Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,135 @@
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
+  <header>
+    <nav class="nav-bar">
+      <a href="../index.html">
+        <div class="logo"></div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="../about/about.html">Our Company</a></li>
+        <li><a href="../locations/locations.html">Locations</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-nav">
+      <a href="../index.html">
+        <div class="logo"></div>
+      </a>
+      <div class="hamburger-menu"></div>
+    </div>
+  </header>
   
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>Ready to take it to the next level? Let’s talk about your project or idea and find out how
+      we can help your business grow. If you are looking for unique digital experiences that’s
+      relatable to your users, drop us a line.
+      </p>
+      <!-- Contact Form -->
+       <form action="">
+        <ul>
+          <li>
+            <label for="name"><span aria-label="required"></span></label>
+            <input type="text" id="name" name="user_name" placeholder="Name" required />
+          </li>
+          <li>
+            <label for="email"><span aria-label="required"></span></label>
+            <input type="email" id="email" name="user_email" placeholder="Email Address" required />
+          </li>
+          <li>
+            <label for="tel"><span aria-label="required"></span></label>
+            <input type="tel" id="tel" name="tel" placeholder="Phone" required />
+          </li>
+          <li>
+            <label for="msg"><span aria-label="required"></span></label>
+            <textarea type="text" id="msg" name="user_message" placeholder="Your Message" required /></textarea>
+          </li>
+          <li>
+            <button class="btn" type="submit">Submit</button>
+          </li>
+        </ul>
+       </form>
+    </div>
+  </section>
+
+  <section class="locations">
+    <div class="content-wrapper">
+      <div class="location">
+        <div class="illustration-1">
+          <img src="../img/shared/desktop/illustration-canada.svg" alt="Canada illustration">
+        </div>
+        <h3>Canada</h3>
+        <a href="../locations/locations.html">
+          <div class="btn map">See Location</div>
+        </a>
+      </div>
+      <div class="location">
+        <div class="illustration-2">
+          <img src="../img/shared/desktop/illustration-australia.svg" alt="Australia illustration">
+        </div>
+        <h3>Australia</h3>
+        <a href="../locations/locations.html">
+          <div class="btn map">See Location</div>
+        </a>
+      </div>
+      <div class="location">
+        <div class="illustration-3">
+          <img src="../img/shared/desktop/illustration-united-kingdom.svg" alt="United Kingdom illustration">
+        </div>
+        <h3>United Kingdom</h3>
+        <a href="../locations/locations.html">
+          <div class="btn map">See Location</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="content-wrapper">
+      <nav class="footer">
+        <a href="#">
+          <div class="logo"></div>
+        </a>
+        <div class="divider"></div>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="../about/about.html">Our Company</a></li>
+            <li><a href="../locations/locations.html">Locations</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="address">
+        <span>Designo Central Office</span>
+        <p>3886 Wellington Street<br>
+          Toronto, Ontario M9C 3J5</p>
+      </div>
+      <div class="contact-info">
+        <span>Contact Us (Central Office)</span>
+        <p>P : +1 253-863-8967<br>
+          M : contact@designo.co</p>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/" target="_blank">
+          <div class="facebook"></div>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <div class="youtube"></div>
+        </a>
+        <a href="https://x.com/" target="_blank">
+          <div class="twitter"></div>
+        </a>
+        <a href="https://www.pinterest.com/" target="_blank">
+          <div class="pinterest"></div>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <div class="instagram"></div>
+        </a>
+      </div>
+    </div>
+  </footer>
   <script src="../js/main.js" defer></script>
 </body>
 </html>
