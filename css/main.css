@@ -46,6 +46,17 @@ p {
     color: var(--dark-grey);
 }
 
+a.learn {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--dark-grey);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /************************************************** 
     HEADER SECTION
 **************************************************/
@@ -108,7 +119,7 @@ nav {
 }
 
 .hero-content {
-    padding: 80px 24px;
+    padding: 80px 24px 0px;
 }
 
 h1 {
@@ -118,6 +129,11 @@ h1 {
     color: var(--white);
     text-align: center;
     margin-bottom: 14px;
+}
+
+.hero-content a {
+    position: relative;
+    z-index: 100;
 }
 
 .hero-content p {
@@ -145,7 +161,7 @@ h1 {
 }
 
 .hero-img {
-    margin: -160px -121px;
+    margin: -80px -123px;
 }
 
 /************************************************** 
@@ -367,7 +383,7 @@ footer {
     color: var(--white);
 }
 
-footer p { 
+footer p {
     color: var(--white);
     opacity: 0.5035;
     margin-bottom: 40px;
