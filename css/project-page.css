@@ -3,7 +3,7 @@
 **************************************************/
 
 section {
-    margin-bottom: 96px; 
+    margin-bottom: 96px;
 }
 
 /* Hero section */
@@ -49,6 +49,7 @@ section {
     height: 158px;
     background-color: var(--xtr-light-peach);
     border-radius: 0 0 15px 15px;
+    cursor: pointer;
 }
 
 .project-content h3 {
@@ -58,6 +59,13 @@ section {
 
 .project-content p {
     padding: 0 30px;
+}
+
+.project-content:hover,
+.project-content:hover h3,
+.project-content:hover p {
+    color: var(--white);
+    background-color: var(--peach);
 }
 
 /* Footer section */
