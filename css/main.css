@@ -4,6 +4,7 @@
     --peach: hsl(11, 73%, 66%);
     --black: hsl(270, 3%, 11%);
     --white: hsl(0, 0%, 100%);
+    --menu-bkgd: hsl(264, 4%, 11%);
 
     /* SECONDARY COLORS */
     --light-peach: hsl(11, 100%, 80%);
@@ -27,7 +28,7 @@ html {
 
 body {
     /*****************Remove*****************/
-    max-width: 375px;
+    max-width: 376px;
     border: 1px solid var(--dark-grey);
     /****************************************/
     margin: 0 auto;
@@ -37,9 +38,11 @@ body {
 }
 
 header {
+    width: 375px;
+    height: 96px;
     position: fixed;
     top: 0;
-    z-index: 5000;
+    z-index: 10;
     background-color: var(--white);
 }
 
@@ -110,6 +113,7 @@ nav {
     background-size: contain;
     width: 24px;
     height: 20px;
+    cursor: pointer;
 }
 
 /* Drop down menu */
@@ -120,6 +124,7 @@ nav {
     background-size: contain;
     width: 24px;
     height: 20px;
+    cursor: pointer;
 }
 
 .mobile-menu {
@@ -130,8 +135,8 @@ nav {
 .drop-down {
     width: 375px;
     height: 235px;
-    background-color: var(--black);
-    animation: 0.2s ease-in-out;
+    background-color: var(--menu-bkgd);
+    animation: fade-in 0.8s ease forwards;
 }
 
 .drop-down .content-wrapper {
@@ -150,12 +155,17 @@ nav {
     color: var(--white);
 }
 
+.drop-down ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
 .overlay {
     height: 100vh;
     background-color: #000000;
     position: relative;
     top: 16px;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .hide {
@@ -163,13 +173,15 @@ nav {
 }
 
 @keyframes fade-in {
-    0% {
-        opacity: 0;
+
+    from {
+        transform: translateY(-200px);
     }
 
-    100% {
-        opacity: 1;
+    to {
+        transform: translateY(-2px);
     }
+
 }
 
 /************************************************** 
@@ -202,7 +214,7 @@ h1 {
 
 .hero-content a {
     position: relative;
-    z-index: 100;
+    z-index: 3;
 }
 
 .hero-content p {
@@ -229,6 +241,11 @@ h1 {
     align-items: center;
 }
 
+.btn:hover {
+    background-color: var(--light-peach);
+    color: var(--white);
+}
+
 .hero-img {
     margin: -80px -123px;
 }
@@ -253,6 +270,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .web-design {
@@ -260,13 +278,25 @@ h1 {
     margin-bottom: 24px;
 }
 
+.web-design:hover {
+    background-image: linear-gradient(hsla(11, 73%, 66%, 0.8), hsla(11, 73%, 66%, 0.8)), url("../img/home/mobile/image-web-design.jpg");
+}
+
 .app-design {
     background-image: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.5)), url("../img/home/mobile/image-app-design.jpg");
     margin-bottom: 24px;
 }
 
+.app-design:hover {
+    background-image: linear-gradient(hsla(11, 73%, 66%, 0.8), hsla(11, 73%, 66%, 0.8)), url("../img/home/mobile/image-app-design.jpg");
+}
+
 .graphic-design {
     background-image: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.5)), url("../img/home/mobile/image-graphic-design.jpg");
+}
+
+.graphic-design:hover {
+    background-image: linear-gradient(hsla(11, 73%, 66%, 0.8), hsla(11, 73%, 66%, 0.8)), url("../img/home/mobile/image-graphic-design.jpg");
 }
 
 h2 {
@@ -377,7 +407,6 @@ article {
     height: 379px;
     border-radius: 15px;
     margin: 0 24px;
-    z-index: 1;
 }
 
 .cta-content {
@@ -452,6 +481,10 @@ footer {
     color: var(--white);
 }
 
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+
 footer p {
     color: var(--white);
     opacity: 0.5035;
@@ -508,4 +541,12 @@ footer p {
     background-image: url("../img/shared/desktop/icon-instagram.svg");
     width: 24px;
     height: 24px;
+}
+
+.facebook:hover,
+.youtube:hover,
+.twitter:hover,
+.pinterest:hover,
+.instagram:hover {
+    filter: contrast(60%) brightness(132%);
 }
